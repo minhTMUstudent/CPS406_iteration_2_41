@@ -12,6 +12,7 @@
 Welcome to the Club Management Application! This project aims to simplify the administrative tasks of a small amateur club, such as tracking member attendance, managing finances, and communication.
 
 **PROJECT OVERVIEW**
+
 Our project aims to streamline the management of a small amateur club, with weekly practice sessions led by an amateur coach. We're developing the Club Management Application to handle various administrative tasks, including finance tracking, member attendance, and communication. Members pay a $10 fee per session or in advance for up to a month, with discounts available. The application will provide detailed financial records, manage member attendance, send practice reminders, and address payment issues. Key tasks include providing the treasurer with unpaid debt logs, managing current month account payables, and creating a member log for efficient organization. We'll implement a system to incentivize timely payments and empower the coach with communication tools. Additionally, we'll create user-friendly interfaces for new and existing members to register and log in. Ultimately, our goal is to create a well-organized and harmonious club environment that prioritizes member engagement and enjoyment.
 
 **USAGE**
