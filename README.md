@@ -7,13 +7,16 @@
   4. Rahman, Shopnil
   5. truong, minh hoa
 
+
 **CLUB MANAGEMENT APPLICATION**
 
 Welcome to the Club Management Application! This project aims to simplify the administrative tasks of a small amateur club, such as tracking member attendance, managing finances, and communication.
 
+
 **PROJECT OVERVIEW**
 
 Our project aims to streamline the management of a small amateur club, with weekly practice sessions led by an amateur coach. We're developing the Club Management Application to handle various administrative tasks, including finance tracking, member attendance, and communication. Members pay a $10 fee per session or in advance for up to a month, with discounts available. The application will provide detailed financial records, manage member attendance, send practice reminders, and address payment issues. Key tasks include providing the treasurer with unpaid debt logs, managing current month account payables, and creating a member log for efficient organization. We'll implement a system to incentivize timely payments and empower the coach with communication tools. Additionally, we'll create user-friendly interfaces for new and existing members to register and log in. Ultimately, our goal is to create a well-organized and harmonious club environment that prioritizes member engagement and enjoyment.
+
 
 **USAGE**
 1. Tracking Finances:
@@ -32,7 +35,10 @@ Our project aims to streamline the management of a small amateur club, with week
 	- New members can register an account to participate in club activities.
 	- Existing members can log in and access features based on their role within the club.
 
+
 **CONTACT**
+
 If you have any questions, suggestions, or feedback, feel free to reach out to us at humaira.adeeb@torontomu.ca, donovan.ngai@toronotmu.ca, kevin1.khuu@torontomu.ca, minhhoa.truong@torontomu.ca, shopnil.rahman@torontomu.ca
+
 
 Thank you for using the Club Management Application!
