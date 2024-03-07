@@ -8,6 +8,7 @@
   5. truong, minh hoa
 
 **CLUB MANAGEMENT APPLICATION**
+
 Welcome to the Club Management Application! This project aims to simplify the administrative tasks of a small amateur club, such as tracking member attendance, managing finances, and communication.
 
 **PROJECT OVERVIEW**
