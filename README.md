@@ -38,7 +38,7 @@ Our project aims to streamline the management of a small amateur club, with week
 
 **CONTACT**
 
-If you have any questions, suggestions, or feedback, feel free to reach out to us at humaira.adeeb@torontomu.ca, donovan.ngai@toronotmu.ca, kevin1.khuu@torontomu.ca, minhhoa.truong@torontomu.ca, shopnil.rahman@torontomu.ca
+If you have any questions, suggestions, or feedback, feel free to reach out to us at humaira.adeeb@torontomu.ca, donovan.ngai@torontomu.ca, kevin1.khuu@torontomu.ca, minhhoa.truong@torontomu.ca, shopnil.rahman@torontomu.ca
 
 
 Thank you for using the Club Management Application!
