@@ -31,7 +31,7 @@ nav ul li a {
 /* Starter section styles */
 #starter {
     background-size: cover;
-    height: 400px;
+    height: 390px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,7 +105,7 @@ nav ul li a {
 
 #about_us {
     background-size: cover;
-    height: 310px;
+    height: 320px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +120,7 @@ nav ul li a {
 
 #fees {
     background-size: cover;
-    height: 720px;
+    height: 730px;
     display: flex;
     justify-content: center;
     align-items: center;
