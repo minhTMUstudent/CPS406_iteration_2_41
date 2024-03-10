@@ -1,4 +1,3 @@
-/* Body styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.7;
@@ -6,29 +5,26 @@ body {
 ul {
         list-style-type: none;
     }
-/* Header styles */
 header {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
-
 header h1 {
     font-size: 3.5em;
 }
 
 nav ul li {
-    display: inline;
     margin: 0px 10px;
+    display: inline;
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
+    color: #fff;
 }
 
-/* Starter section styles */
 #starter {
     background-size: cover;
     height: 390px;
@@ -40,21 +36,20 @@ nav ul li a {
 
 .starter {
     background-color: rgba(169, 67, 194, 0.658);
-    padding: 45px;
     border-radius: 2px;
+    padding: 45px;
 }
 
 .starter h2 {
-    font-size: 2.7em;
     margin-bottom: 10px;
+    font-size: 2.7em;
 }
 
 .starter p {
-    font-size: 1.4em;
     margin-bottom: 20px;
+    font-size: 1.4em;
 }
 
-/* Button styles */
 .button {
     display: inline-block;
     background-color: rgba(236, 164, 47, 0.96);
@@ -65,7 +60,6 @@ nav ul li a {
     transition: background-color 0.3s ease;
 }
 
-/* Button styles */
 .button_account {
     display: inline-block;
     background-color: #ff9800;
@@ -84,47 +78,46 @@ nav ul li a {
     background-color: #f57c00;
 }
 
-/* Main content container styles */
 .general_container {
     max-width: 800px;
-    margin: 0 auto;
     padding: 40px 45px;
-    background-color: rgba(169, 67, 194, 0.658);
     border-radius: 2px;
+    margin: 0 auto;
+    background-color: rgba(169, 67, 194, 0.658);
 }
 
 .general_container h2 {
-    font-size: 2.7em;
     margin-bottom: 10px;
+    font-size: 2.7em;
 }
 
 .general_container p {
-    font-size: 1.4em;
     margin-bottom: 20px;
+    font-size: 1.4em;
 }
 
 #about_us {
     background-size: cover;
     height: 320px;
-    display: flex;
     justify-content: center;
-    align-items: center;
+    display: flex;
     text-align: center;
+    align-items: center;
 }
 
 #our_schedule {
+    margin-top: 20px;
     text-align: center;
     height: 340px;
-    margin-top: 20px;
 }
 
 #fees {
     background-size: cover;
     height: 730px;
-    display: flex;
     justify-content: center;
+    display: flex;
+    text-align: center;
     align-items: center;
-    text-align: justify;
 }
 
 #fees h2 {
@@ -132,33 +125,32 @@ nav ul li a {
 }
 
 #tendollarclass {
-    text-align: center;
     font-weight: bold;
+    text-align: center;
 }
 
 #CreateAccount {
     background-size: cover;
     height: 450px;
-    display: flex;
     justify-content: center;
-    align-items: center;
+    display: flex;
     text-align: center;
+    align-items: center;
 }
 
 #contact_us {
     background-size: cover;
     height: 400px;
-    display: flex;
     justify-content: center;
-    align-items: center;
+    display: flex;
     text-align: center;
+    align-items: center;
     padding-bottom: 18px
 }
 
-/* Footer styles */
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
+    color: #efefef;
+    background-color: #303030;
     padding: 22px;
+    text-align: center;
 }
