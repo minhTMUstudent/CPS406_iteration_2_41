@@ -1,0 +1,164 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+ul {
+        list-style-type: none;
+    }
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3.5em;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0px 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Starter section styles */
+#starter {
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.starter {
+    background-color: rgba(169, 67, 194, 0.658);
+    padding: 45px;
+    border-radius: 2px;
+}
+
+.starter h2 {
+    font-size: 2.7em;
+    margin-bottom: 10px;
+}
+
+.starter p {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+.button {
+    display: inline-block;
+    background-color: rgba(236, 164, 47, 0.96);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Button styles */
+.button_account {
+    display: inline-block;
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #f57c00;
+}
+
+.button_account:hover {
+    background-color: #f57c00;
+}
+
+/* Main content container styles */
+.general_container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 45px;
+    background-color: rgba(169, 67, 194, 0.658);
+    border-radius: 2px;
+}
+
+.general_container h2 {
+    font-size: 2.7em;
+    margin-bottom: 10px;
+}
+
+.general_container p {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+#about_us {
+    background-size: cover;
+    height: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#our_schedule {
+    text-align: center;
+    height: 340px;
+    margin-top: 20px;
+}
+
+#fees {
+    background-size: cover;
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+#fees h2 {
+    text-align: center;
+}
+
+#tendollarclass {
+    text-align: center;
+    font-weight: bold;
+}
+
+#CreateAccount {
+    background-size: cover;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contact_us {
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 22px;
+}
