@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>HTML, CSS and JavaScript demo</title>
+<title>Shops' Salsa Club</title>
 </head>
+<link rel="stylesheet" href="/landing-page-style/.css">
+<script>
+    // Add event listener to the "Create Account" button
+    document.getElementByClass("button_account").addEventListener("click", redirect_function());
+
+    function redirect_function() {
+        window.location.href = "register.html";
+    }
+</script>
 <body>
     <header>
         <h1>Shops' Salsa Club</h1>

@@ -66,11 +66,14 @@
             background-color: #f57c00;
         }
         .checkmark {
-            color: rgb(17, 227, 17);
+            color: rgb(9, 119, 9);
+        }
+        #confirm_password_match {
+            padding-bottom: 15px;
         }
 </style>
 <body>
-    <form action="submit_registration_form.php" method="POST">
+    <form action="submit_registration_form.php" method="POST" onsubmit="return validateForm()">
         <h2>Join Us - Registration Form</h2>
         <label for="firstname">First Name</label>
         <input type="text" id="firstname" name="firstname" required>
@@ -83,7 +86,7 @@
         <label for="password">Password</label>
         <input type="password" id="password" name="password" required>
         <label for="password">Re-type Password</label>
-        <input type="password2" id="password2" name="password2" required>
+        <input type="password" id="password2" name="password2" onkeyup="doPasswordsMatch()" required>
         <span id="confirm_password_match" class="checkmark"></span>
         <input type="submit" value="Register">
     </form>
