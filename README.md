@@ -5,7 +5,7 @@
   2. Khuu, Kevin
   3. Ngai, Donovan
   4. Rahman, Shopnil
-  5. truong, minh hoa
+  5. Truong, Minh Hoa
 
 
 **CLUB MANAGEMENT APPLICATION**

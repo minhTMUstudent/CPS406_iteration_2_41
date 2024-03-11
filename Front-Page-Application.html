@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shops' Salsa Club</title>
+</head>
+<link rel="stylesheet" href="/landing-page-style/.css">
+<script>
+    // Add event listener to the "Create Account" button
+    document.getElementByClass("button_account").addEventListener("click", redirect_function());
+
+    function redirect_function() {
+        window.location.href = "register.html";
+    }
+</script>
+<body>
+    <header>
+        <h1>Shops' Salsa Club</h1>
+        <nav>
+            <ul>
+                <li><a href="#about_us">About Us</a></li>
+                <li><a href="#our_schedule">Our Schedule</a></li>
+                <li><a href="#fees">Our Fees</a></li>
+                <li><a href="#CreateAccount">Join Us</a></li>
+                <li><a href="#contact_us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="starter">
+        <div class="starter">
+            <h2>Welcome to Shops' Salsa Club!</h2>
+            <p>Beginner or not, we welcome you!<br>Join us every week for fun, charged salsa dancing!</p>
+            <a href="#CreateAccount" class="button">I want to Join!</a>
+        </div>
+    </section>
+
+    <section id="about_us">
+        <div class="general_container">
+            <h2>About Us</h2>
+            <p>Salsa Dancing is a way of life! We love to share our passion with individuals of all skill levels.</p>
+        </div>
+    </section>
+
+    <section id="our_schedule">
+        <div class="general_container">
+            <h2>Class Schedule</h2>
+            <p>Our upcoming classes and events for the Winter 2024 Season:</p>
+            <ul>
+                <li>Every Wednesday @ 7 PM - 9 PM</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="fees">
+        <div class="general_container">
+            <h2>Our Fees</h2>
+            <p>We believe that everyone should be able to participate and learn this wonderful art regardless of
+            their financial situation and status. We do however, need to cover fees such as renting the hall
+            where we practice every week and the instructor. As such, to only cover our costs, we ask that members pay a fee of:</p>
+            <p id="tendollarclass"> $10 / class</p>
+            <p>Members may pay up to a month's worth of fees in advance ($40). Members who are consistent and timely with their payments
+            for a period of 3 months will receive a complementary discount of 10% for one class. If you still find
+            financial hardship in this, please don't hesitate to contact us and we will see if you qualify for any
+            additional discounts.</p>
+        </div>
+    </section>
+
+    <section id="CreateAccount">
+        <div class="general_container">
+            <h2>Join Us</h2>
+            <p>If you're interested in joining us, click on the button below to create an account:</p>
+            <p class="button_account">Create an Account</button>
+        </div>
+    </section>
+
+    <section id="contact_us">
+        <div class="general_container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or want to get in touch, feel free to reach out:</p>
+            <ul>
+                <li>Email: info@shopssalsastudio.com</li>
+                <li>Phone: 647-456-7890</li>
+                <li>Address: 725 Victoria Park Avenue, Toronto, ON M2K 1H5</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <p>&copy; 2024 Shops' Salsa Studio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
