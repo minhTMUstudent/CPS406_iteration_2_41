@@ -95,7 +95,24 @@ nav ul li a {
     margin-bottom: 20px;
     font-size: 1.4em;
 }
+.login {
+    position: absolute; 
+    top: 30px; 
+    right: 22px; 
+}
 
+.login_button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #ff9800;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.login_button:hover {
+    background-color: #f57c00;
+}
 #about_us {
     background-size: cover;
     height: 320px;
