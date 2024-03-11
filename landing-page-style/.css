@@ -57,7 +57,7 @@ nav ul li a {
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
 }
 
 .button_account {
@@ -67,15 +67,17 @@ nav ul li a {
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
 }
 
 .button:hover {
     background-color: #f57c00;
+    cursor: pointer;
 }
 
 .button_account:hover {
     background-color: #f57c00;
+    cursor: pointer;
 }
 
 .general_container {
