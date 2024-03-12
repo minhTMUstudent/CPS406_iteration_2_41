@@ -25,4 +25,6 @@ def payBalance():
     debtDB.at[rowNum, "Remaining Balance"] = debtDB.at[rowNum, "Remaining Balance"] - payBack
 
     if debtDB.at[rowNum, "Remaining Balance"] == 0:
-        debtDB.at[rowNum, "Month Overdue"] = 0
+        debtDB.drop(index=rowNum, inplace=True)
+
+    printDB()
