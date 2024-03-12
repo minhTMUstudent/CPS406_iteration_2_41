@@ -21,15 +21,13 @@ def createEntry():
 
     return entry
 
-def addPrevious():
-    global previousAttendees
+def addPrevious(dataFrame):
     entry = createEntry()
-    previousAttendees = pd.concat([previousAttendees, entry])
+    return pd.concat([dataFrame, entry])
 
-def addFuture():
-    global futureAttendees
+def addFuture(dataFrame):
     entry = createEntry()
-    futureAttendees = pd.concat([futureAttendees, entry])
+    return pd.concat([dataFrame, entry])
 
 data = {
     'Name': ['Kevin Khuu'],
@@ -41,11 +39,3 @@ data = {
 
 previousAttendees = pd.DataFrame(data)
 futureAttendees = pd.DataFrame(data)
-
-addPrevious()
-addFuture()
-
-print(previousAttendees)
-print("")
-print(futureAttendees)
-
