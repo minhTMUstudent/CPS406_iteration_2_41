@@ -10,13 +10,19 @@ debtDB["Month Overdue"] = []
 def addExpense():
     dueDate = input("Enter the due date: ")
     expense = input("Enter type of expense: ")
-    amount = input("Enter amount of expense: ")
-    monthOverdue = input("Enter number of months overdue: ")
+    amount = int(input("Enter amount of expense: "))
+    monthOverdue = int(input("Enter number of months overdue: "))
     row = {"Due Date": dueDate, "Expense": expense, "Remaining Balance": amount, "Month Overdue": monthOverdue}
     debtDB.loc[len(debtDB)] = row
 
 def printDB():
     print(debtDB)
 
-addExpense()
-printDB()
+def payBalance():
+    printDB()
+    rowNum = int(input("Enter row number of expense to pay off: "))
+    payBack = int(input("Enter amount to pay back: "))
+    debtDB.at[rowNum, "Remaining Balance"] = debtDB.at[rowNum, "Remaining Balance"] - payBack
+
+    if debtDB.at[rowNum, "Remaining Balance"] == 0:
+        debtDB.at[rowNum, "Month Overdue"] = 0
