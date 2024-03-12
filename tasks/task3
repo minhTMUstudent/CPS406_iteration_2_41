@@ -1,0 +1,51 @@
+import pandas as pd
+
+def createEntry():
+    name = input("Name: ")
+    phone = int(input("Phone Number: "))
+    address = input("Address: ")
+    paid = input("Paid(Y/N): ")
+    if paid.lower() == 'y':
+        paid = True
+    else:
+        paid = False
+    date = pd.to_datetime(input("Class Date (YYYY-MM-DD): "))
+
+    entry = pd.DataFrame({
+        'Name': [name],
+        'Phone': [phone],
+        'Address': [address],
+        'Paid': [paid],
+        'Class Date': [date]
+    })
+
+    return entry
+
+def addPrevious():
+    global previousAttendees
+    entry = createEntry()
+    previousAttendees = pd.concat([previousAttendees, entry])
+
+def addFuture():
+    global futureAttendees
+    entry = createEntry()
+    futureAttendees = pd.concat([futureAttendees, entry])
+
+data = {
+    'Name': ['Kevin Khuu'],
+    'Phone': [1234567890],
+    'Address': ['123 Random Road'],
+    'Paid': [True],
+    'Class Date': [pd.to_datetime('2024-03-12')]
+}
+
+previousAttendees = pd.DataFrame(data)
+futureAttendees = pd.DataFrame(data)
+
+addPrevious()
+addFuture()
+
+print(previousAttendees)
+print("")
+print(futureAttendees)
+
