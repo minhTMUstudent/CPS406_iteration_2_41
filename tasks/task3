@@ -1,5 +1,8 @@
 import pandas as pd
 
+# Parameters: None
+# Purpose: 
+#   Helper function to create an imaginary entry for the dataframe
 def createEntry():
     name = input("Name: ")
     phone = int(input("Phone Number: "))
@@ -21,14 +24,26 @@ def createEntry():
 
     return entry
 
-def addPrevious(dataFrame):
-    entry = createEntry()
+
+# Parameters: 
+#   dataFrame - the original Dataframe
+#   entry - a Dataframe that represents a new entry
+# Purpose: 
+#   Takes a new entry and concatenates it with the original Dataframe of previous attendees
+def addPrevious(dataFrame, entry):
     return pd.concat([dataFrame, entry])
 
-def addFuture(dataFrame):
-    entry = createEntry()
+
+# Parameters: 
+#   dataFrame - the original Dataframe
+#   entry - a Dataframe that represents a new entry
+# Purpose: 
+#   Takes a new entry and concatenates it with the original Dataframe of future attendees
+def addFuture(dataFrame, entry):
     return pd.concat([dataFrame, entry])
 
+
+# General structure of the Dataframes
 data = {
     'Name': ['Kevin Khuu'],
     'Phone': [1234567890],
@@ -39,3 +54,14 @@ data = {
 
 previousAttendees = pd.DataFrame(data)
 futureAttendees = pd.DataFrame(data)
+
+
+# For testing
+"""
+previousAttendees = addPrevious(previousAttendees, createEntry())
+futureAttendees = addFuture(futureAttendees, createEntry())
+
+print(previousAttendees)
+print("")
+print(futureAttendees)
+"""
