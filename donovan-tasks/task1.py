@@ -29,9 +29,3 @@ def payBalance():
         debtDB.drop(index=rowNum, inplace=True)
 
     printDB()
-
-addExpense()
-addExpense()
-printDB()
-addExpense()
-printDB()
