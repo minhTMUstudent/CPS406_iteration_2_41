@@ -12,12 +12,14 @@ def addExpense():
     expense = input("Enter type of expense: ")
     amount = int(input("Enter amount of expense: "))
     monthOverdue = int(input("Enter number of months overdue: "))
+    print()
     row = {"Due Date": dueDate, "Expense": expense, "Remaining Balance": amount, "Month Overdue": monthOverdue}
     debtDB.loc[len(debtDB)] = row
     debtDB.sort_values(by='Month Overdue', ascending=False, inplace=True, ignore_index=True)
 
 def printDB():
     print(debtDB)
+    print()
 
 def payBalance():
     printDB()
@@ -27,5 +29,6 @@ def payBalance():
 
     if debtDB.at[rowNum, "Remaining Balance"] == 0:
         debtDB.drop(index=rowNum, inplace=True)
+        debtDB.sort_values(by='Month Overdue', ascending=False, inplace=True, ignore_index=True)
 
     printDB()
