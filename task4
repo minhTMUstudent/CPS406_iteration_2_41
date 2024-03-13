@@ -1,1 +1,60 @@
+import pandas as pd
+
+# Function to create a new entry for attendees
+def createEntry():
+    name = input("Name: ")
+    phone = int(input("Phone Number: "))
+    address = input("Address: ")
+    paid = input("Paid (Y/N): ")
+    if paid.lower() == 'y':
+        paid = True
+    else:
+        paid = False
+    date = pd.to_datetime(input("Class Date (YYYY-MM-DD): "))
+    entry = pd.DataFrame({
+        'Name': [name],
+        'Phone': [phone],
+        'Address': [address],
+        'Paid': [paid],
+        'Class Date': [date]
+    })
+    return entry
+
+# Function to add a new entry to previous attendees
+def addPrevious(dataFrame, entry):
+    return pd.concat([dataFrame, entry])
+
+# Function to add a new entry to future attendees
+def addFuture(dataFrame, entry):
+    return pd.concat([dataFrame, entry])
+
+# Function to organize members by the number of times they paid and not paid
+def organizeMembers():
+    all_attendees = pd.concat([previousAttendees, futureAttendees])
+    attendance_summary = all_attendees.groupby('Name')['Paid'].value_counts().unstack(fill_value=0)
+    print("Attendance Summary:")
+    print(attendance_summary)
+    print()
+
+# Initial attendees data
+data = {
+    'Name': ['Kevin Khuu','John Doe', 'Jane Smith', 'Alice Johnson', 'John Doe', 'Jane Smith', 'Alice Johnson', 'Bob Brown', 'Charlie Green'],
+    'Phone': [1234567890,1234567890, 9876543210, 5555555555, 1234567890, 9876543210, 5555555555, 1111111111, 2222222222],
+    'Address': ['123 Random Road','123 Main St', '456 Elm St', '789 Oak St', '123 Main St', '456 Elm St', '789 Oak St', '321 Pine St', '654 Maple St'],
+    'Paid': [True,True, True, False, True, False, True, True, False],
+    'Class Date': ['2024-03-12','2024-03-10', '2024-03-10', '2024-03-10', '2024-03-11', '2024-03-11', '2024-03-11', '2024-03-12', '2024-03-12']
+}
+
+# Initial previous and future attendees DataFrames
+previousAttendees = pd.DataFrame(data)
+futureAttendees = pd.DataFrame(data)
+
+# Add new entries to previous and future attendees (uncomment the lines for testing)
+"""
+previousAttendees = addPrevious(previousAttendees, createEntry())
+futureAttendees = addFuture(futureAttendees, createEntry())
+"""
+
+# Organize members by the number of times they paid and not paid
+organizeMembers()
 
