@@ -1,0 +1,53 @@
+import pandas as pd
+from task3 import *
+
+# Parameters:
+#   dataFrame - the dataFrame of attendees
+#   memberName - the name of the member to check for a potential discount
+# Purpose:
+#   Checks whether the member is eligible for a discount
+def receiveDiscount(dataFrame, memberName):
+
+    # A filtered dataFrame that consists of only the given member
+    filteredDF = dataFrame[dataFrame['Name'] == memberName]
+
+    # Dates of the classes from the past 3 months
+    past3Months = pd.date_range(end=pd.Timestamp.now(), periods=12, freq='W').tolist()
+
+    # Payments of the member from the past 3 months
+    memberPayments = filteredDF[filteredDF['Class Date'].isin(past3Months)]
+
+    # Number of payments made over the past 3 months
+    totalPayments = memberPayments.shape[0]
+
+    return totalPayments == len(past3Months)
+
+
+# TESTING
+
+print("Before adding payments:")
+print(receiveDiscount(previousAttendees, 'Kevin Khuu'))
+print("")
+
+# 15 consecutive payments
+data = pd.DataFrame({
+    'Name': ['Kevin Khuu'] * 15,
+    'Phone': [1234567890] * 15,
+    'Address': ['123 Random Road'] * 15,
+    'Paid': [True] * 15,
+    'Class Date': pd.date_range(end=pd.Timestamp.now(), periods=15, freq='W').tolist()
+})
+
+# 5 consecutive payments
+"""
+data = pd.DataFrame({
+    'Name': ['Kevin Khuu'] * 15,
+    'Phone': [1234567890] * 15,
+    'Address': ['123 Random Road'] * 15,
+    'Paid': [True] * 15,
+    'Class Date': pd.date_range(end=pd.Timestamp.now(), periods=15, freq='W').tolist()
+})
+"""
+
+print("After adding payments:")
+print(receiveDiscount(addPrevious(previousAttendees, data), 'Kevin Khuu'))
