@@ -14,42 +14,42 @@ def createEntry():
         paid = False
     date = pd.to_datetime(input("Class Date (YYYY-MM-DD): "))
 
-    entry = pd.DataFrame({
-        'Name': [name],
-        'Phone': [phone],
-        'Address': [address],
-        'Paid': [paid],
-        'Class Date': [date]
-    })
+    entry = {
+        'Name': name,
+        'Phone': phone,
+        'Address': address,
+        'Paid': paid,
+        'Class Date': date
+    }
 
     return entry
 
 
 # Parameters: 
-#   dataFrame - the original Dataframe
-#   entry - a Dataframe that represents a new entry
+#   entry - an entry to be added
 # Purpose: 
-#   Takes a new entry and concatenates it with the original Dataframe of previous attendees
-def addPrevious(dataFrame, entry):
-    return pd.concat([dataFrame, entry])
+#   Takes a new entry and concatenates it with the previousAttendees Dataframe
+def addPrevious(entry):
+    global previousAttendees
+    previousAttendees.loc[len(previousAttendees)] = entry
 
 
 # Parameters: 
-#   dataFrame - the original Dataframe
-#   entry - a Dataframe that represents a new entry
+#   entry - an entry to be added
 # Purpose: 
-#   Takes a new entry and concatenates it with the original Dataframe of future attendees
-def addFuture(dataFrame, entry):
-    return pd.concat([dataFrame, entry])
+#   Takes a new entry and concatenates it with the futureAttendees Dataframe
+def addFuture(entry):
+    global futureAttendees
+    futureAttendees.loc[len(futureAttendees)] = entry
 
 
 # General structure of the Dataframes
 data = {
-    'Name': ['Kevin Khuu'],
-    'Phone': [1234567890],
-    'Address': ['123 Random Road'],
-    'Paid': [True],
-    'Class Date': [pd.to_datetime('2024-03-12')]
+    'Name': [],
+    'Phone': [],
+    'Address': [],
+    'Paid': [],
+    'Class Date': []
 }
 
 previousAttendees = pd.DataFrame(data)
@@ -57,9 +57,10 @@ futureAttendees = pd.DataFrame(data)
 
 
 # For testing
+
 """
-previousAttendees = addPrevious(previousAttendees, createEntry())
-futureAttendees = addFuture(futureAttendees, createEntry())
+addPrevious(createEntry())
+addFuture(createEntry())
 
 print(previousAttendees)
 print("")
