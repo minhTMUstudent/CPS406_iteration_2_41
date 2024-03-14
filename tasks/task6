@@ -12,7 +12,7 @@ def receiveDiscount(dataFrame, memberName):
     filteredDF = dataFrame[dataFrame['Name'] == memberName]
 
     # Dates of the classes from the past 3 months
-    past3Months = pd.date_range(end=pd.Timestamp.now(), periods=12, freq='W').tolist()
+    past3Months = pd.date_range(end=pd.Timestamp.now().date(), periods=12, freq='W')
 
     # Payments of the member from the past 3 months
     memberPayments = filteredDF[filteredDF['Class Date'].isin(past3Months)]
@@ -24,30 +24,25 @@ def receiveDiscount(dataFrame, memberName):
 
 
 # TESTING
-
+"""
 print("Before adding payments:")
 print(receiveDiscount(previousAttendees, 'Kevin Khuu'))
 print("")
 
-# 15 consecutive payments
-data = pd.DataFrame({
-    'Name': ['Kevin Khuu'] * 15,
-    'Phone': [1234567890] * 15,
-    'Address': ['123 Random Road'] * 15,
-    'Paid': [True] * 15,
-    'Class Date': pd.date_range(end=pd.Timestamp.now(), periods=15, freq='W').tolist()
-})
+# Add consecutive payments
+for i in range(25):
+    entry = {
+        'Name': 'Kevin Khuu',
+        'Phone': 1234567890,
+        'Address': '123 Random Road',
+        'Paid': True,
+        'Class Date': (pd.date_range(end=pd.Timestamp.now().date(), periods=1, freq='W') - pd.Timedelta(weeks=i))[0]
+    }
+    addPrevious(entry)
 
-# 5 consecutive payments
-"""
-data = pd.DataFrame({
-    'Name': ['Kevin Khuu'] * 15,
-    'Phone': [1234567890] * 15,
-    'Address': ['123 Random Road'] * 15,
-    'Paid': [True] * 15,
-    'Class Date': pd.date_range(end=pd.Timestamp.now(), periods=15, freq='W').tolist()
-})
-"""
+#print(previousAttendees)
+
 
 print("After adding payments:")
-print(receiveDiscount(addPrevious(previousAttendees, data), 'Kevin Khuu'))
+print(receiveDiscount(previousAttendees, 'Kevin Khuu'))
+"""
