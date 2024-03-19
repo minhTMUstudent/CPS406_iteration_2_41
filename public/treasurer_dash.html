@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shops' Salsa Studio - Treasurer Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #333;
+            padding: 20px;
+            color: #fff;  
+            text-align: center;
+        }
+        nav {
+            background-color: rgba(187, 34, 221, 0.658);
+            text-align: center;
+            padding: 25px 10px;
+        }
+        nav a {
+            color: #fff;
+            background-color: #ff9800;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px 30px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #f57c00;
+        }
+        .logout {
+            position: absolute; 
+            top: 10px; 
+            right: 7px; 
+        }
+        .logout_button {
+        padding: 5px 10px;
+        background-color: #ff9800;
+        color: white;
+        border-radius: 6px;
+        border: none;
+        text-decoration: none;
+        }
+        .login_button:hover {
+            background-color: #f57c00;
+        }
+        .container {
+            max-width: 800px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        h2 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shops' Salsa Studio Treasurer Portal</h1>
+    </header>
+    <nav>
+        <a href="#">Manage Coach List</a>
+        <a href="#">Manage Class Schedule</a>
+    </nav>
+    <div class="logout">
+        <a href="logout.html" class="logout_button">Logout</a>
+    </div>
+    <div class="container">
+        <h2>Welcome, [INSERT NAME FROM DATABASE]</h2>
+        <p>Your current position: Treasurer</p>
+    </div>
+</body>
+</html>

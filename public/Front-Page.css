@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+ul {
+        list-style-type: none;
+    }
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    font-size: 3.5em;
+}
+
+nav ul li {
+    margin: 0px 10px;
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#starter {
+    background-size: cover;
+    height: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.starter {
+    background-color: rgba(169, 67, 194, 0.658);
+    border-radius: 2px;
+    padding: 45px;
+}
+
+.starter h2 {
+    margin-bottom: 10px;
+    font-size: 2.7em;
+}
+
+.starter p {
+    margin-bottom: 20px;
+    font-size: 1.4em;
+}
+
+.button {
+    display: inline-block;
+    background-color: rgba(236, 164, 47, 0.96);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+}
+
+.button_account {
+    display: inline-block;
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+}
+
+.button:hover {
+    background-color: #f57c00;
+    cursor: pointer;
+}
+
+.button_account:hover {
+    background-color: #f57c00;
+    cursor: pointer;
+}
+
+.general_container {
+    max-width: 10000px;
+    padding: 40px 45px;
+    border-radius: 2px;
+    margin: 0 auto;
+    background-color: rgba(169, 67, 194, 0.658);
+}
+
+.general_container h2 {
+    margin-bottom: 10px;
+    font-size: 2.7em;
+}
+
+.general_container p {
+    margin-bottom: 20px;
+    font-size: 1.4em;
+}
+.login {
+    position: absolute; 
+    top: 30px; 
+    right: 22px; 
+}
+
+.login_button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #ff9800;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.login_button:hover {
+    background-color: #f57c00;
+}
+#about_us {
+    background-size: cover;
+    height: 400px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+#our_schedule {
+    margin-top: 20px;
+    text-align: center;
+    height: 340px;
+}
+
+#fees {
+    background-size: cover;
+    height: 730px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+#fees h2 {
+    text-align: center;
+}
+
+#tendollarclass {
+    font-weight: bold;
+    text-align: center;
+}
+
+#CreateAccount {
+    background-size: cover;
+    height: 450px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+#contact_us {
+    background-size: cover;
+    height: 400px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 18px
+}
+
+footer {
+    color: #efefef;
+    background-color: #303030;
+    padding: 22px;
+    text-align: center;
+}

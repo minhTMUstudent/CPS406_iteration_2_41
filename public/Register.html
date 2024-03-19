@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register an Account - Shops' Salsa Club</title>
+</head>
+<style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #414141;
+        }
+        form {
+            max-width: 475px;
+            margin: 25px auto;
+            background: #faf9f9;
+            padding: 30px;
+            border-radius: 4px;
+            box-shadow: 0px 0px 10px rgba(9, 9, 9, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 95%;
+            padding: 15px;
+            margin: 10px 0 25px 0;
+            border: 2px solid #dad3d3;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="email"] {
+            width: 95%;
+            padding: 15px;
+            margin: 10px 0 25px 0;
+            border: 2px solid #dad3d3;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="tel"] {
+            width: 95%;
+            padding: 15px;
+            margin: 10px 0 25px 0;
+            border: 2px solid #dad3d3;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="password"] {
+            width: 95%;
+            padding: 15px;
+            margin: 10px 0 25px 0;
+            border: 2px solid #dad3d3;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="password2"] {
+            width: 95%;
+            padding: 15px;
+            margin: 10px 0 25px 0;
+            border: 2px solid #dad3d3;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 95%;
+            background-color: #ff9800;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #f57c00;
+        }
+        .checkmark {
+            color: rgb(9, 119, 9);
+        }
+        #confirm_password_match {
+            padding-bottom: 15px;
+        }
+        .cross {
+            color: rgb(176, 10, 2);
+        }
+</style>
+<body>
+    <form action="submit_registration_form.php" method="POST" onsubmit="return validateRegistrationForm()">
+        <h2>Join Us - Registration Form</h2>
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" name="firstname" required>
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname" required>
+        <label for="username">User Name</label>
+        <input type="text" id="username" name="username" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        <label for="password">Re-type Password</label>
+        <input type="password" id="password2" name="password2" onkeyup="doPasswordsMatch()" required>
+        <span id="confirm_password_match" class="checkmark"></span>
+        <span id="password_not_match" class="cross"></span>
+        <input type="submit" value="Register">
+    </form>
+
+    <script>
+        function doPasswordsMatch() {
+            var password = document.getElementById("password").value;
+            var password2 = document.getElementById("password2").value;
+            var confirm_password_match = document.getElementById("confirm_password_match");
+            if (password === password2) {
+                confirm_password_match.innerHTML = '&#10004; Passwords match!';
+                password_not_match.innerHTML = ''; 
+            } else {
+                confirm_password_match.innerHTML = '';
+                password_not_match.innerHTML = '&#10060; Passwords do NOT match!';
+            }
+        }
+
+        function validateRegistrationForm() {
+            var password = document.getElementById("password").value;
+            var password2 = document.getElementById("password2").value;
+            if (password !== password2) {
+                alert("Your passwords do not match! Please try again.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
