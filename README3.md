@@ -8,9 +8,11 @@
 5. truong, minh hoa
 
 **CLUB MANAGEMENT APPLICATION**
+
 Welcome to the Club Management Application! This application is designed to help manage the finances and attendance of a small amateur club, such as a salsa dancing group. With features to track payments, manage member attendance, and handle scheduling, this app aims to streamline club management tasks.
 
 **PROJECT OVERVIEW**
+
 Our project aims to streamline the management of a small amateur club, with weekly practice sessions led by an amateur coach. We're developing the 
 Club Management Application to handle various administrative tasks, including finance tracking, member attendance, and communication. Members pay a $10 fee per session or in advance for up to a month, with discounts available. The application will provide detailed financial records, manage member attendance, send practice reminders, and address payment issues. Key tasks include providing the treasurer with unpaid debt logs, managing current month account payables, and creating a member log for efficient organization. We'll implement a system 
 to incentivize timely payments and empower the coach with communication tools. Additionally, we'll create user-friendly interfaces for new and existing members to register and log in. Ultimately, our goal is to create a well-organized and harmonious club environment that prioritizes member engagement and enjoyment.
@@ -29,6 +31,7 @@ to incentivize timely payments and empower the coach with communication tools. A
 2. Scheduling and Payment: Members can schedule and pay for practices within the app. A user-friendly interface facilitates payment methods, with notifications sent to the treasurer and coach upon scheduling and payment completion, providing details such as user ID, class amount, and relevant coach.
 
 **CONTACT**
+
 If you have any questions, suggestions, or feedback, feel free to reach out to us at humaira.adeeb@torontomu.ca, donovan.ngai@toronotmu.ca, kevin1.khuu@torontomu.ca, minhhoa.truong@torontomu.ca, shopnil.rahman@torontomu.ca
 
 Thank you for using the Club Management Application!
