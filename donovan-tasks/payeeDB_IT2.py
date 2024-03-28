@@ -21,9 +21,12 @@ def printDB():
     print()
 
 def calIncomeTotal():
-    printDB()
     amountTotal = accPayable.iloc[:, 2]
-    print("This month's total income is:",amountTotal.sum())
+    amountTotal.sum()
+
+def printIncomeTotal():
+    printDB()
+    print("This month's total income is:", calIncomeTotal())
     print()
 
 def clearDB():
